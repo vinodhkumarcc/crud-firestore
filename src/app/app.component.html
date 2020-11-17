@@ -1,13 +1,17 @@
 <div class="container">
   <div class="row">
     <div class="col s6">
-      <form (ngSubmit)="onSubmit()" [formGroup]="form">
+      <form (ngSubmit)="onSubmit()" class="row" [formGroup]="form">
 
         <input placeholder="title" 
                formControlName="title" 
                type="text" 
                class="input-field col s12"
                [(ngModel)]="form.value.title">
+
+               <button class="waves-effect waves-light btn col s2"  
+        (click)="onSubmit()"> add
+</button>
       </form>
       
       

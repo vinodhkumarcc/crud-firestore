@@ -16,7 +16,8 @@ export class AppComponent implements OnInit {
   constructor( private commonService: CommonService) {}
   
   form = new FormGroup({
-    title: new FormControl('')
+    title: new FormControl(''),
+    description: new FormControl('')
   });
 
 
